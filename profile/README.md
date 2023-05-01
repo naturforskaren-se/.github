@@ -1,10 +1,11 @@
 # latest image.
 latest image is on dockerhub (0.33)
 - https://hub.docker.com/repository/docker/inkimar/naturalist/tags?page=1&ordering=last_updated
+- connection-url - ``` useSSL=false ```
 
 ```
 <datasource jndi-name="java:/NaturDS" pool-name="NaturDS" use-ccm="true">
-                    <connection-url>jdbc:mysql://nfdb:3306/taxonpages_v2?autoReconnect=true&amp;useSSL=true</connection-url>
+                    <connection-url>jdbc:mysql://nfdb:3306/taxonpages_v2?autoReconnect=true&amp;useSSL=false</connection-url>
                     <driver>mysql-connector-java-5.1.47.jar</driver>
                     <pool>
                         <min-pool-size>10</min-pool-size>
